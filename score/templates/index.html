@@ -6,7 +6,13 @@
 	<th>Name</th>
 	<th>Score</th>
 </tr>
-# hey!
+
+<tr>
+{% for field in form %}
+<td>{{ field }}</td>
+{% endfor %}
+</tr>
+
 {% for score in scores %}
  <tr>
 	 <td>{{ score.name }}</td>
