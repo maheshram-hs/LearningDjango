@@ -8,6 +8,10 @@ def index(request):
     scores = Score.objects.all()
     context['scores'] = scores
     context['title'] = 'Home'
+    if request.method == 'POST':
+        if 'save' in request.POST:
+            form = ScoreForm(request.POST)
+            form.save()
     context['form'] = form
     return render(request, 'index.html', context)
 
