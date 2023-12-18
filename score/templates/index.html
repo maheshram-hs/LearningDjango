@@ -23,8 +23,8 @@
  <tr>
 	 <td>{{ score.name }}</td>
 	 <td>{{ score.value }}</td>
-	 <td><button name="edit" value="{{ score.id }}">Edit</button></td>
-	 <td><button name="delete" value="{{ score.id }}">Delete</button></td>
+	 <td><button formnovalidate name="edit" value="{{ score.id }}">Edit</button></td>
+	 <td><button formnovalidate name="delete" value="{{ score.id }}">Delete</button></td>
  </tr>
 {% endfor %}
 
