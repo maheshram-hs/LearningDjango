@@ -21,7 +21,7 @@ Before getting started, ensure the following prerequisites are met:
 ### Getting Started
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/yourproject.git
+git clone https://github.com/maheshram-hs/LearningDjango.git
 cd yourproject
 
 # Create a virtual environment
