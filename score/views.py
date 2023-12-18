@@ -14,7 +14,7 @@ def index(request):
             if not pk:
                 form = ScoreForm(request.POST)
             else:
-                score = Score.objects.get(pk)
+                score = Score.objects.get(id=pk)
                 form = ScoreForm(request.POST, instance=score)
             form.save()
             form = ScoreForm()
