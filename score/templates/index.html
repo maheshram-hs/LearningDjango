@@ -12,12 +12,11 @@
 	<th>Action</th>
 </tr>
 
+{% if not form.instance.if %}
 <tr>
-{% for field in form %}
-<td>{{ field }}</td>
-{% endfor %}
-<td><button name="save">Save</button></td>
+	{% include 'save.html' %}
 </tr>
+{% endif %}
 
 {% for score in scores %}
  <tr>
