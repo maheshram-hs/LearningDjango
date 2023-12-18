@@ -10,8 +10,14 @@ def index(request):
     context['title'] = 'Home'
     if request.method == 'POST':
         if 'save' in request.POST:
-            form = ScoreForm(request.POST)
+            pk = request.POST.get('save')
+            if not pk:
+                form = ScoreForm(request.POST)
+            else:
+                score = Score.objects.get(pk)
+                form = ScoreForm(request.POST, instance=score)
             form.save()
+            form = ScoreForm()
         elif 'delete' in request.POST:
             pk = request.POST.get('delete')
             score = Score.objects.get(id=pk)
