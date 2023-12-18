@@ -5,11 +5,13 @@
 <tr>
 	<th>Name</th>
 	<th>Score</th>
+	<th>Action</th>
 </tr>
 
 <tr>
 {% for field in form %}
 <td>{{ field }}</td>
+<td><button name="save">Save</button></td>
 {% endfor %}
 </tr>
 
@@ -17,6 +19,8 @@
  <tr>
 	 <td>{{ score.name }}</td>
 	 <td>{{ score.value }}</td>
+	 <td><button name="edit">Edit</button></td>
+	 <td><button name="delete">Delete</button></td>
  </tr>
 {% endfor %}
 </table>
