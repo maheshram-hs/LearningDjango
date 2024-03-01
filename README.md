@@ -2,7 +2,7 @@
 
 ## Description
 
-"LearningDjango" is a web application that offers a score table feature. Users can perform CRUD operations (Create, Read, Update, Delete) on student records, including student names and scores. This project was created by following the excellent 'FREE Django Tutorial for Beginners' video series made by Tony from the YouTube channel 'Tony Teaches Tech'. This README provides detailed instructions on setting up the project locally and utilizing its features.
+LearningDjango is a web application that offers a score table feature. Users can perform CRUD operations (Create, Read, Update, Delete) on student records, including student names and scores. This project was created by following the excellent 'FREE Django Tutorial for Beginners' video series made by Tony from the YouTube channel 'Tony Teaches Tech'. This README provides detailed instructions on setting up the project locally and utilizing its features.
 
 ## Features
 
